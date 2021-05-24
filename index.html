@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'">
+	<meta name="theme-color" content="#EE5522">
+	<!-- Primary Meta Tags -->
+<title>TeleShare - Easy Code Transfer</title>
+<meta name="title" content="TeleShare - Easy Code Transfer">
+<meta name="description" content="Easily Transfer Codes from on devices to another.
+It's Easy and Secured.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://metatags.io/">
+<meta property="og:title" content="TeleShare - Easy Code Transfer">
+<meta property="og:description" content="Easily Transfer Codes from on devices to another.
+It's Easy and Secured.">
+<meta property="og:image" content="dist/back.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://metatags.io/">
+<meta property="twitter:title" content="TeleShare - Easy Code Transfer">
+<meta property="twitter:description" content="Easily Transfer Codes from on devices to another.
+It's Easy and Secured.">
+<meta property="twitter:image" content="dist/back.png">
+    <script src="lib/lilscript.js"></script>
+	<script src="lib/bootstrap.js"></script>
+	<script src="lib/codemirror.js"></script>
+	<script src="lib/javascript.js"></script>
+	<script src="lib/matchbrackets.js"></script>
+	<script src="lib/htmlmixed.js"></script>
+	<script src="lib/anime.js"></script>
+	<script src="lib/bootbox.js"></script>
+	<script src="lib/socket.js"></script>
+	<script src="lib/qrcode.js"></script>
+    <script src="lib/qrcode_reader.js"></script>
+    <script src="lib/Notifier.js"></script>
+	<script src="dist/script.js" type="text/lilscript"></script>
+	<link rel="stylesheet" href="lib/bootstrap.css">
+	<link rel="stylesheet" href="lib/codemirror.css">
+	<link rel="stylesheet" href="dist/style.css">
+</head>
+
+<body>
+<div id="page1">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img id="logo" src="dist/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item" href="">Contributing</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="">Rating</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="">Buy Coffee</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Join</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<div id="github">
+<a href="">
+<p>DevBash1</p>
+<img src="">
+</a>
+</div>
+<div class="card">
+  <div class="card-body">
+  	Share codes on the go! 🚀
+  </div>
+</div>
+
+<br>
+
+<div id="board">
+Using TeleShare
+</div>
+<div id="write">
+Paste and Share your codes with other users around the world on a GO!<br>
+It's Fast and Secure.
+</div>
+<br>
+<br>
+<center>
+<button id="share" class="btn1">Share</button><button class="btn1">Recieve</button>
+</center>
+<br>
+<br>
+<footer>
+<center>
+<h5>Dev Bash - 2021</h5>
+<br>
+<p>Made with ❤️ from 🇳🇬 by Dev Bash</p>
+</center>
+</footer>
+</div>
+
+
+<!-- Page 2 -->
+
+<div id="page2">
+<div id="top">
+<h1 id="user">Username</h1>
+<img id="icon" src="dist/dp.png">
+</div>
+<div>
+<textarea id="use">
+</textarea>
+</div>
+<div id="buttom">
+<button id="send" class="btn1">
+Send
+</button>
+</div>
+<script>
+let use = document.getElementById("use");
+let editor = CodeMirror.fromTextArea(use, {
+    lineNumbers: true,
+    matchBrackets: true,
+    gutter: true,
+    lineWrapping: true,
+});
+
+if(editor.getValue() == ""){
+    setTimeout(function(){
+        editor.refresh()
+        editor.setValue("\n\n\n\n\n\n\n\n\n\n");
+    },1000);
+}
+</script>
+
+
+</div>
+
+
+<!-- Page 3 -->
+
+<div id="page3">
+<div id="top">
+<h1 id="user1">Username</h1>
+<img id="icon" src="dist/dp.png">
+</div>
+<div id="owner">
+<div id="qrcode">
+</div>
+<h1 id="password">
+
+</h1>
+</div>
+<input id="link">
+
+<div id="joined">
+
+</div>
+
+<div id="disconnect">
+Disconnect
+</div>
+
+</div>
+
+<!-- Page 4 -->
+
+<div id="page4">
+<div id="top">
+<h1 id="user2">Username</h1>
+<img id="icon" src="dist/dp.png">
+</div>
+
+</div>
+
+<div id="page5">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img id="logo" src="dist/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item" href="">Contributing</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="">Rating</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="">Buy Coffee</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Join</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+
+<div id="scanner" hidden="true">
+    <video id="qr_video">
+
+    </video>
+</div>
+<center id="error"></center>
+<div id="pas_cover" class="card1">
+<input id="pass_enter" placeholder="Enter TShare Code">
+<button id="pass_button" class="btn2">Enter</button>
+</div>
+
+
+<footer>
+<center>
+<h5>Dev Bash - 2021</h5>
+<br>
+<p>Made with ❤️ from 🇳🇬 by Dev Bash</p>
+</center>
+</footer>
+
+</div>
+
+<script>
+document.onhashchange = function(e) {
+    e.preventDafault();
+    
+    if (window.location.hash != '#undefined') {
+        //goBack();
+    } else {
+        //history.pushState("", document.title, window.location.pathname);
+        //location.reload();
+    }
+
+}
+</script>
+</body>
+</html>

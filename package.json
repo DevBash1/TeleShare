@@ -1,0 +1,26 @@
+{
+  "name": "teleshare",
+  "version": "1.0.0",
+  "description": "An App For Sharing Code Easily",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.1.2",
+    "websocket": "^1.0.34"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo 'No test'",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Transfer",
+    "Share",
+    "Codes"
+  ],
+  "author": "Dev Bash",
+  "license": "ISC"
+}
