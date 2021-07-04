@@ -4,7 +4,7 @@ const http = require('http');
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server);
-
+const port = process.env.PORT || 5000;
 
 app.use("/lib", express.static(__dirname + '/lib'));
 app.use("/dist", express.static(__dirname + '/dist'));
@@ -151,5 +151,5 @@ io.on("disconnection", function(data){
 
 
 
-server.listen(7000);
+server.listen(port);
 //console.log("Running on port " + process.env.PORT);
