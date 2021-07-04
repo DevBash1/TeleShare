@@ -152,4 +152,4 @@ io.on("disconnection", function(data){
 
 
 server.listen(port);
-//console.log("Running on port " + process.env.PORT);
+console.log("Running on port " + port);
